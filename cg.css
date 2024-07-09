@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+h1{
+    color: white;
+    position: absolute;
+    top: 0;
+    padding-top: 60px;
+    font-size: 50px;
+    font-weight: 500;
+}
+span{
+    color: aqua;
+    font-weight: 700;
+    border-bottom: 3px solid ;
+}
+button {
+    padding: 20px 30px;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: aqua;
+    border: none;
+    outline: none;
+    border-radius: 33px;
+    cursor: pointer;
+    color: black;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(68, 233, 245, 0.555), 0 17px 50px 0 rgba(68, 233, 245, 0.555);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+select option {
+    color: black;
+}
+
+.style-code {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 7px;
+    display: flex;
+}
+
+.style-code h3 {
+    color: black;
+    font-weight: lighter;
+    margin-right: 1rem;
+}
+
+#text {
+    margin-top: 00px;
+    height: 250px;
+    width: 470px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #7cc2d6, #156993);
+}
+
+.d-c-box-inner {
+    display: flex;
+    margin: 20px 0;
+    justify-content: space-between;
+    width: 450px;
+}
+
+.d-c-box-inner p {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.d-c-box-inner .select-box {
+    border: 1px solid #aaa;
+    padding: 10px 15px;
+}
+
+.select-box select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 0.9rem;
+}
+
+/* responsive size  */
+@media(max-width:650px){
+    h1{
+        font-size: 29px;
+        }
+        
+        #text {
+          height: 199px;
+          width: 363px;
+        }
+        
+        .d-c-box-inner {
+          width: 340px;
+        }
+        
+        .style-code{
+        width: 298px;
+        }
+        
+        .style-code img{
+        height: 26px;
+        }    
+}
+
+@media (max-width:380px) {
+    h1{
+        font-size: 26px;
+        }
+        
+        #text {
+          width: 343px;
+        }
+        
+        .d-c-box-inner {
+          width: 325px;
+        }
+        
+        .style-code{
+        width: 285px;
+        }
+
+}
